@@ -1,5 +1,15 @@
 # Cypress Cucumber Allure
 
+## Pre-requisite
+
+-   cypress
+-   typescript
+-   allure report
+-   cucumber
+-   prettier
+-   git
+-   dotenv
+
 ## How to run:
 
 -   clone this repo
