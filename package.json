@@ -3,12 +3,12 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "test": "node cypress/scripts/runner.js",
+        "pretest": "(if exist allure-results rmdir /s /q allure-results) && (if exist allure-report rmdir /s /q allure-report) && (if exist cypress\\videos rmdir /s /q cypress\\videos) && (if exist cypress\\screenshots rmdir /s /q cypress\\screenshots) && (mkdir allure-results)",
+        "test": "node cypress/scripts/runner.ts",
         "e2e:open": "npx cypress open --env allure=true --config specPattern=cypress/e2e/**/*.spec.ts --browser chrome",
         "cu:open": "npx cypress open --env allure=true --config specPattern=cypress/cucumber/*.feature,excludeSpecPattern=**/*.spec.ts --browser chrome",
-        "e2e:run": "npm run allure:run && set DEBUG=allure-plugin* && npx cypress run --config specPattern=cypress/e2e/**/*.spec.ts --env allure=true --browser chrome",
+        "e2e:run": "set DEBUG=allure-plugin* && npx cypress run --config specPattern=cypress/e2e/**/*.spec.ts --env allure=true --browser chrome",
         "cu:run": "set DEBUG=allure-plugin* && npx cypress run --config specPattern=cypress/cucumber/*.feature,excludeSpecPattern=**/*.spec.ts --env allure=true --browser chrome",
-        "allure:run": "(if exist allure-results rmdir /s /q allure-results) && (if exist allure-report rmdir /s /q allure-report) && (if exist cypress\\videos rmdir /s /q cypress\\videos) && (if exist cypress\\screenshots rmdir /s /q cypress\\screenshots) && (mkdir allure-results)",
         "posttest": "allure generate allure-results -c -o allure-report && allure open allure-report"
     },
     "devDependencies": {
