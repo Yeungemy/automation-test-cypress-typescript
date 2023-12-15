@@ -1,0 +1,20 @@
+export const EXERCISES = {
+    JS_ALERT_PAGE: 'Alerts (JavaScript)',
+    FAKE_ALERT_PAGE: 'Fake Alerts',
+    FRAME_TEST_PAGE: 'Frames Test Page',
+    IFRAME_TEST_PAGE: 'iFrames Test Page',
+    AJAX_TEST_PAGE:'Ajax JavaScript Examples',
+    DRAG_AND_DROP_PAGE: 'Drag And Drop Test Page (JavaScript)',
+    FIELD_VALIDATION_PAGE: 'Field Validation With JavaScript Example',
+    KEY_CLICK_PAGE: 'Key Click Display Test Page',
+    REDIRECT_TEST_PAGE: 'Redirect (JavaScript) Test Page',
+    REFRESH_TEST_PAGE:'Refresh Test Page',
+    EVENTS_TEST_PAGE: 'Events (JavaScript)',
+    HOVER_TEST_PAGE: 'Hover Test Page',
+    UPLOAD_TEST_PAGE: 'File Upload Example Page',
+    DOWNLOAD_TEST_PAGE: 'File Downloads',
+    JS_DOWNLOAD_TEST_PAGE: 'JavaScript Initiated File Downloads',
+    NEW_WINDOW_TEST_PAGE: 'Windows Link Test Page',
+    JS_FORM_TEST_PAGE: 'HTML5 Element Form Test Page',
+    HTML_FORM_EXAMPLE: 'HTML Form Example'
+}
