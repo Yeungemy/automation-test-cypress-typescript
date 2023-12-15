@@ -9,3 +9,4 @@ allure-results
 .vscode
 allure-report/
 package-lock.json
+cypress/downloads
