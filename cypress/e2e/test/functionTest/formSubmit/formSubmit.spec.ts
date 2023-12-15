@@ -4,8 +4,8 @@ import { homePage } from "../../../pages/commonSection/homePage/home.page";
 import * as EXERCISES from '../../../../data/exercises';
 import { textBoxSection } from '../../../pages/commonSection/textBox/textBox.section';
 import { uploadSection } from '../../../pages/commonSection/upload/upload.section';
-import { basicHtmlForm } from 'pageObjectModel/basicHtmlForm/basicHtmlForm.page';
-import { basicHtmlFormResult } from 'pageObjectModel/basicHtmlForm/basicHtmlFormResult.page';
+import { basicHtmlForm } from '../../../pages/basicHtmlForm/basicHtmlForm.page';
+import { basicHtmlFormResult } from '../../../pages/basicHtmlForm/basicHtmlFormResult.page';
 
 describe('Form Submit', () => {
     const comments = chance.sentence();

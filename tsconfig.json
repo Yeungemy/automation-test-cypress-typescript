@@ -7,19 +7,21 @@
         "moduleResolution": "node",
         "skipLibCheck": true,
         "strict": true,
-        "baseUrl": "./",
         "types": [
             "cypress",
             "node",
             "cypress-file-upload",
-            "@4tw/cypress-drag-drop"
+            "@4tw/cypress-drag-drop", 
+            "@shelex/cypress-allure-plugin/reporter"
         ],
         "jsx": "react",
         "sourceMap": true,
         "outDir": "./dist",
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "noEmit": true
     },
-    "include": ["cypress/**/*.ts", "types/**/*.d.ts"],
+    "include": ["**/*.*"],
 
     "exclude": ["node_modules", "**/*.spec.ts"]
 }
