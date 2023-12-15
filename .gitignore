@@ -6,9 +6,9 @@ cypress/videos/
 cypress/results/
 node_modules/
 allure-results
-.vscode
+#.vscode
 allure-report/
 package-lock.json
-cypress/downloads/
-yarn.lock
-.idea/
+#cypress/downloads/
+#yarn.lock
+#.idea/
