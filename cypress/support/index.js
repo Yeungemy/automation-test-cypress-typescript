@@ -7,10 +7,11 @@ const cypressConfig = {
         specPattern: 'cypress/e2e/**/*.spec.ts',
         excludeSpecPattern: '*.feature'
     },
+
     env: {
         allure: true,
         allureReuseAfterSpec: true,
-        stepDefinitions: `cypress/cucumber/**/*.spec.ts`
+        stepDefinitions: `cypress/cucumber/**/*.ts`
     }
 };
 
@@ -19,7 +20,7 @@ const cypressCucumberConfig = {
     ...{
         config: {
             specPattern: 'cypress/cucumber/*.feature',
-            excludeSpecPattern: '**/*.spec.ts'
+            excludeSpecPattern: 'cypress/e2e/**/*.spec.ts'
         }
     }
 };
